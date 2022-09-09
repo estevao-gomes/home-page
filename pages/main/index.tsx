@@ -1,5 +1,13 @@
-import { ReactElement, ReactNode } from "react";
+import {ReactElement} from "react";
 
-export function Main(children: ReactNode[]) {
-  return <main>{children}</main>;
+interface MainProps{
+  children: ReactElement[]
+}
+
+export function Main({children}: MainProps) {
+  return (
+    <main>
+      {children}
+    </main>
+  );
 }
