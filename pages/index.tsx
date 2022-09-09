@@ -1,11 +1,8 @@
 import type { NextPage } from "next";
-import { Hero } from "./hero";
-import { Navbar } from "./navbar";
-import { Main } from "./main";
-import { About } from "./about";
-import { Projects } from "./projects";
-import { Contact } from "./contact";
 
+import { Main, Navbar, Hero, About, Projects, Contact } from "../components";
+
+// allows for ESLint to ignore error for NextJS Page setup
 // eslint-disable-next-line react/function-component-definition
 const Home: NextPage = () => (
   <Main>

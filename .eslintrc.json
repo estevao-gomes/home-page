@@ -5,6 +5,7 @@
     "prettier"  
   ],
   "rules": {
+    //allows import from index inside folder
     "import/extensions":[
       "error",
       "ignorePackages",
@@ -13,7 +14,9 @@
         "tsx": "never"
       }
     ],
+    //removes preference for default exports
     "import/prefer-default-export": "off",
+    //allows jsx in tsx
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": "off"
 
