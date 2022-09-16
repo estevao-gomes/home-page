@@ -3,8 +3,8 @@ import { ReactElement } from "react";
 export function Navbar() {
   // The border are to be removed on production
   return (
-    <nav className="sticky top-0 -mt-16 w-full border-2 border-red-500 bg-brandLight opacity-80">
-      <ul className="flex list-none justify-end gap-4 py-4 pr-4 font-sans text-text1Light">
+    <nav className="sticky top-0 -mt-14 w-full border-0 border-red-500 bg-brand-light font-bold opacity-80">
+      <ul className="flex list-none justify-end gap-4 py-4 pr-4 font-sans text-text1-light">
         <li>
           <a href="#home" className="hover:opacity-80">
             Home
