@@ -7,9 +7,9 @@ export function Projects() {
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores eius eaque incidunt atque est? Corrupti nam quidem omnis, ipsa exercitationem facere facilis, molestias, esse maxime labore recusandae nulla nobis ex.",
   };
   return (
-    <section id="projects" className="h-fit border-2 border-yellow-500">
+    <section id="projects" className="h-fit font-sans">
       {/* Margin top to keep navbar appearing */}
-      <h1 className="mx-4 mt-24 w-fit bg-surface1-light p-4 text-center font-sans font-bold md:mx-auto">
+      <h1 className="mx-4 mt-24 w-fit bg-surface1-light p-4 text-center font-sans font-bold text-text1-light shadow-lg md:mx-auto lg:text-5xl">
         And these are some of my projects.
       </h1>
       <div className="my-12 ml-4 mb-8 flex-row justify-center">

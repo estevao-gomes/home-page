@@ -14,10 +14,10 @@ export function Card({ name, description, image }: CardProps) {
           <Image src={image} width="1000" height="400" layout="responsive" />
         </div>
         <div>
-          <h2 className="ml-2 mr-auto w-fit bg-surface1-light p-2 font-sans">
+          <h2 className="ml-2 mr-auto w-fit bg-surface1-light p-2 text-text1-light">
             {name}
           </h2>
-          <h3 className="p-2 text-justify font-sans text-xs lg:text-sm">
+          <h3 className="p-2 text-justify font-sans text-xs text-text2-light lg:text-sm">
             {description}
           </h3>
           <button

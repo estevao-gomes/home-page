@@ -6,7 +6,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="flex h-screen items-center border-0 border-blue-500 bg-surface1-light"
+      className="flex h-screen items-center bg-surface1-light"
     >
       {/* Margin top to keep navbar appearing */}
       <div className="flex flex-1 justify-center">
