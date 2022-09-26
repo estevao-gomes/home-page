@@ -10,12 +10,12 @@ export function Stack() {
   return (
     <section
       id="stack"
-      className="flex h-screen flex-col items-center justify-center border-2 border-green-500 bg-surface2-light"
+      className="flex flex-col items-center justify-center border-2 border-green-500 bg-surface2-light sm:h-screen"
     >
-      <h1 className="mx-4 mt-32 flex h-fit w-fit items-center justify-center bg-surface3-light p-8 text-center font-sans font-bold text-text1-light shadow-lg lg:text-5xl">
-        Here is some of the tech I have worked with...
+      <h1 className="mx-4 my-16 flex h-fit w-fit items-center justify-center bg-surface3-light p-8 text-center font-sans font-bold text-text1-light shadow-lg sm:mt-32 lg:text-5xl">
+        Here is some of the tech I work with...
       </h1>
-      <div className="flex flex-1 justify-center gap-16 self-center justify-self-start">
+      <div className="flex w-full flex-1 flex-wrap items-center justify-center gap-12 self-center justify-self-start">
         <Logo path={javascript} name="Javascript(ES6+)" />
         <Logo path={typescript} name="Typescript" />
         <Logo path={react} name="React" />

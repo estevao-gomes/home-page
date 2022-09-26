@@ -9,7 +9,7 @@ const nextConfig = {
   },
   images: {
     dangerouslyAllowSVG: true,
-    domains: ["avatars.dicebear.com"],
+    domains: ["i.imgur.com"],
   },
 };
 

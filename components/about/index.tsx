@@ -10,7 +10,7 @@ export function About() {
     >
       {/* Margin top to keep navbar appearing */}
       <div className="flex flex-1 justify-center">
-        <div className="mx-8 mt-8 flex overflow-hidden rounded-full border-8 border-surface2-light bg-black shadow-xl lg:h-[30em] lg:w-[30em]">
+        <div className="mx-8 flex overflow-hidden rounded-full border-8 border-surface2-light bg-black shadow-xl lg:mt-8 lg:h-[30em] lg:w-[30em]">
           <Image src={placeholder} className="" />
         </div>
       </div>
@@ -20,7 +20,7 @@ export function About() {
             Hello, I am <span className="text-brand-light">Estevão Gomes.</span>
           </p>
         </h1>
-        <h2>
+        <h2 className="text-base lg:text-2xl">
           <p className="mt-4 text-text2-light">
             I’m interested in learning more about the web development and coding
             world. I also know a thing or two about microcontrollers, solar

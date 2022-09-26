@@ -28,6 +28,14 @@ module.exports = {
         surface4: {
           light: "hsl(var(--brand-hue) 20% 85% / <alpha-value>)",
         },
+        border: {
+          light:
+            "hsl(var(--brand-hue) var(--brand-saturation) 40% / <alpha-value>)",
+        },
+      },
+      boxShadow: {
+        "brand-light":
+          "hsla(var(--brand-hue) var(--brand-saturation) 40% 0.4 / <alpha-value>)/40 5px 5px, hsla(var(--brand-hue) var(--brand-saturation) 40% 0.3 / <alpha-value>) 10px 10px, hsla(var(--brand-hue) var(--brand-saturation) 40% 0.2 / <alpha-value>) 15px 15px, hsla(var(--brand-hue) var(--brand-saturation) 40% 0.1 / <alpha-value>) 20px 20px, hsla(var(--brand-hue) var(--brand-saturation) 40% 0.05 / <alpha-value>) 25px 25px",
       },
     },
   },
