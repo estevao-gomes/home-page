@@ -7,21 +7,21 @@ import placeholder from "../../public/HeroPlaceholder.jpg";
 
 export function About() {
   // Ref on section is sent to isInViewport hook.
-  const imageRef = useRef() as RefObject<HTMLDivElement>;
+  const sectionRef = useRef() as RefObject<HTMLDivElement>;
   // Returns true if section is in viewport, else, false
-  const isInViewport1 = useIsInViewport(imageRef);
+  const isInViewport = useIsInViewport(sectionRef);
 
   // Borders are to be removed on production
   return (
     <section
-      ref={imageRef}
+      ref={sectionRef}
       id="about"
       className="flex h-screen items-center bg-surface1-light"
     >
       <div className="flex flex-1 justify-center">
         {/* Sets content to appear on screen when on viewport */}
         <Transition
-          show={isInViewport1}
+          show={isInViewport}
           enter="transition-opacity duration-1000"
           enterFrom="opacity-0"
           enterTo="opacity-100"
@@ -34,7 +34,7 @@ export function About() {
       <div className="mx-8 flex-1">
         {/* Sets content to appear on screen when on viewport */}
         <Transition
-          show={isInViewport1}
+          show={isInViewport}
           enter="transition-opacity duration-1000"
           enterFrom="opacity-0"
           enterTo="opacity-100"

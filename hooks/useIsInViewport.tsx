@@ -1,23 +1,20 @@
-import {useState, useMemo, useEffect, RefObject} from 'react'
+import { useState, useEffect, RefObject } from "react";
 
+// Checks if element from ref is on viewport using "IntersectionObserver" API. Returns state which is true when object is on viewport.
 export function useIsInViewport(ref: RefObject<HTMLDivElement>) {
-    const [isIntersecting, setIsIntersecting] = useState(false);
+  const [isIntersecting, setIsIntersecting] = useState(false);
 
-    const observer = useMemo(
-      () =>
-        new IntersectionObserver(([entry]) =>
-          setIsIntersecting(entry.isIntersecting)
-        ),
-      []
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) =>
+      setIsIntersecting(entry.isIntersecting)
     );
 
-    useEffect(() => {
-      observer.observe(ref?.current);
+    observer.observe(ref?.current);
 
-      return () => {
-        observer.disconnect();
-      };
-    }, [ref, observer]);
+    return () => {
+      observer.disconnect();
+    };
+  }, [ref]);
 
-    return isIntersecting;
-  }
+  return isIntersecting;
+}
