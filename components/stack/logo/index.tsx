@@ -1,21 +1,17 @@
 import Image from "next/image";
-import { RefObject } from "react";
 import { Transition } from "@headlessui/react";
-
-import { useIsInViewport } from "../../../hooks/useIsInViewport";
 
 interface LogoProps {
   path: any;
   name: string;
-  sectionRef: RefObject<HTMLDivElement>
+  isInViewport: boolean;
 }
-export function Logo({ path, name, sectionRef }: LogoProps) {
-  
-  const isInViewport = useIsInViewport(sectionRef);
-  console.log("Logos are in viewport: ", isInViewport);
+export function Logo({ path, name, isInViewport }: LogoProps) {
+  // Viewport check is received from section because checking logo for view port causes strange rendering behavior.
+
   return (
     <div className="flex h-1/5 flex-col items-center justify-center text-center">
-      <div ref={sectionRef} className="w-full">
+      <div className="w-full">
         <Transition
           show={isInViewport}
           enter="transition-opacity duration-1000"

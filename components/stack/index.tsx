@@ -6,11 +6,17 @@ import typescript from "../../public/typescript-icon.svg";
 import nextjs from "../../public/nextjs.svg";
 import tailwindcss from "../../public/tailwindcss-icon.svg";
 import react from "../../public/react.svg";
+import { useIsInViewport } from "../../hooks/useIsInViewport";
 
 export function Stack() {
+  // Creating ref to check for viewport and pass to Logo.
   const sectionRef = useRef() as RefObject<HTMLDivElement>;
+
+  const isInViewport = useIsInViewport(sectionRef);
+
   return (
     <section
+      ref={sectionRef}
       id="stack"
       className="flex flex-col items-center justify-center border-0 border-green-500 bg-surface2-light sm:h-screen"
     >
@@ -19,15 +25,19 @@ export function Stack() {
       </h1>
       <div className="mb-8 flex w-full flex-1 flex-wrap items-center justify-center gap-12 self-center justify-self-start">
         <Logo
-          sectionRef={sectionRef}
+          isInViewport={isInViewport}
           path={javascript}
           name="Javascript(ES6+)"
         />
-        <Logo sectionRef={sectionRef} path={typescript} name="Typescript" />
-        <Logo sectionRef={sectionRef} path={react} name="React" />
-        <Logo sectionRef={sectionRef} path={nextjs} name="NextJS" />
-        <Logo sectionRef={sectionRef} path={tailwindcss} name="TailwindCSS" />
-        <Logo sectionRef={sectionRef} path={firebase} name="Firebase" />
+        <Logo isInViewport={isInViewport} path={typescript} name="Typescript" />
+        <Logo isInViewport={isInViewport} path={react} name="React" />
+        <Logo isInViewport={isInViewport} path={nextjs} name="NextJS" />
+        <Logo
+          isInViewport={isInViewport}
+          path={tailwindcss}
+          name="TailwindCSS"
+        />
+        <Logo isInViewport={isInViewport} path={firebase} name="Firebase" />
       </div>
     </section>
   );

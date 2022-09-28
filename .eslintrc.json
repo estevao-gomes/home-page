@@ -14,7 +14,6 @@
     "import/prefer-default-export": "off",
     //allows jsx in tsx
     "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": "off",
-    "no-console": "off"
+    "react/jsx-filename-extension": "off"
   }
 }
