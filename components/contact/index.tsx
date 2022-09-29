@@ -1,7 +1,6 @@
 export function Contact() {
   return (
     <section id="contact" className="bg-surface1-light text-center font-sans">
-      {/* Margin top to keep navbar appearing */}
       <div className="mx-auto flex h-screen w-1/2 flex-col items-center justify-center">
         <h1 className="mt-6 bg-surface2-light p-4 font-bold text-text1-light shadow-lg lg:text-5xl">
           Get in Touch!

@@ -7,7 +7,7 @@ interface LogoProps {
   isInViewport: boolean;
 }
 export function Logo({ path, name, isInViewport }: LogoProps) {
-  // Viewport check is received from section because checking logo for view port causes strange rendering behavior.
+  // Viewport check is received from section because checking logo for viewport causes strange rendering behavior.
 
   return (
     <div className="flex h-1/5 flex-col items-center justify-center text-center">

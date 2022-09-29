@@ -8,11 +8,29 @@ import tailwindcss from "../../public/tailwindcss-icon.svg";
 import react from "../../public/react.svg";
 import { useIsInViewport } from "../../hooks/useIsInViewport";
 
+type logoType = {
+  name: string;
+  path: string;
+};
+
 export function Stack() {
   // Creating ref to check for viewport and pass to Logo.
   const sectionRef = useRef() as RefObject<HTMLDivElement>;
 
-  const isInViewport = useIsInViewport(sectionRef);
+  const isInViewport: boolean = useIsInViewport(sectionRef);
+
+  // Creates logo list to facilitate insertion of new techs.
+  const logos: logoType[] = [
+    { name: "firebase", path: firebase },
+    { name: "javascript", path: javascript },
+    { name: "typescript", path: typescript },
+    { name: "tailwindcss", path: tailwindcss },
+    { name: "nextjs", path: nextjs },
+    { name: "react", path: react },
+  ];
+  function generateKey(pre: string) {
+    return `${pre}_${new Date().getTime()}`;
+  }
 
   return (
     <section
@@ -24,20 +42,14 @@ export function Stack() {
         Here is some of the tech I work with...
       </h1>
       <div className="mb-8 flex w-full flex-1 flex-wrap items-center justify-center gap-12 self-center justify-self-start">
-        <Logo
-          isInViewport={isInViewport}
-          path={javascript}
-          name="Javascript(ES6+)"
-        />
-        <Logo isInViewport={isInViewport} path={typescript} name="Typescript" />
-        <Logo isInViewport={isInViewport} path={react} name="React" />
-        <Logo isInViewport={isInViewport} path={nextjs} name="NextJS" />
-        <Logo
-          isInViewport={isInViewport}
-          path={tailwindcss}
-          name="TailwindCSS"
-        />
-        <Logo isInViewport={isInViewport} path={firebase} name="Firebase" />
+        {logos.map((logo, index) => (
+          <Logo
+            key={generateKey(`Logo_${index}`)}
+            isInViewport={isInViewport}
+            path={logo.path}
+            name={logo.name}
+          />
+        ))}
       </div>
     </section>
   );
