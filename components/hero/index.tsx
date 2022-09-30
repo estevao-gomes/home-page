@@ -1,6 +1,6 @@
 import Image from "next/future/image";
 
-import placeholder from "../../public/HeroPlaceholder.jpg";
+import heroImage from "../../public/Hero.jpg";
 
 export function Hero() {
   return (
@@ -21,7 +21,7 @@ export function Hero() {
 
       <div className="flex h-full flex-1 border-0 border-green-900">
         <Image
-          src={placeholder}
+          src={heroImage}
           className="h-1/2 w-full self-center"
           alt="Estevao Gomes Image"
         />

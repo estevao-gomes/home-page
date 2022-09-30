@@ -3,7 +3,7 @@ import { useRef, RefObject } from "react";
 import { Transition } from "@headlessui/react";
 import { useIsInViewport } from "../../hooks/useIsInViewport";
 
-import placeholder from "../../public/HeroPlaceholder.jpg";
+import photo from "../../public/Photo.jpg";
 
 export function About() {
   // Ref on section is sent to isInViewport hook.
@@ -27,7 +27,7 @@ export function About() {
           enterTo="opacity-100"
         >
           <div className="mx-2 flex overflow-hidden bg-black shadow-xl md:mx-8 md:rounded-full md:border-8 md:border-surface2-light lg:mt-8 lg:h-[30em] lg:w-[30em]">
-            <Image src={placeholder} className="" alt="About Me Image" />
+            <Image src={photo} className="" alt="About Me Image" />
           </div>
         </Transition>
       </div>
