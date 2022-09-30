@@ -2,30 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-  :root{
-    --brand-hue: 200;
-    --brand-saturation: 100%;
-    --brand-lightness: 50%;
+@layer base {
+  :root {
+    --brand-hue: 207;
+    --brand-saturation: 44%;
+    --brand-lightness: 49%;
   }
 
-  h1{
-    @apply text-3xl
+  h1 {
+    @apply text-3xl;
   }
-  h2{
-    @apply text-2xl
+  h2 {
+    @apply text-2xl;
   }
-  h3{
-    @apply text-xl
+  h3 {
+    @apply text-xl;
   }
-  h4{
-    @apply text-lg
+  h4 {
+    @apply text-lg;
   }
-  h5{
-    @apply text-base
+  h5 {
+    @apply text-base;
   }
-  h6{
-    @apply text-sm
+  h6 {
+    @apply text-sm;
   }
 }
 

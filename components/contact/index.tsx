@@ -1,12 +1,11 @@
 export function Contact() {
   return (
     <section id="contact" className="bg-surface1-light text-center font-sans">
-      {/* Margin top to keep navbar appearing */}
       <div className="mx-auto flex h-screen w-1/2 flex-col items-center justify-center">
         <h1 className="mt-6 bg-surface2-light p-4 font-bold text-text1-light shadow-lg lg:text-5xl">
           Get in Touch!
         </h1>
-        <h2 className="my-8 text-text2-light">
+        <h2 className="my-8 text-base text-text2-light md:text-2xl ">
           <p>
             If you saw anything interesting, have some projects you want to know
             more about, or see an opportunity for colaboration, you can reach
@@ -22,7 +21,7 @@ export function Contact() {
           href="mailto:estevaog.gomes@gmail.com"
           className="text-text-1-light hover:border-surface-2-light rounded-md border-2 border-brand-light py-4 px-2 transition-all duration-300 hover:bg-brand-light"
         >
-          Contato
+          Contact
         </a>
       </div>
     </section>

@@ -1,12 +1,8 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "airbnb",
-    "prettier"  
-  ],
+  "extends": ["next/core-web-vitals", "airbnb", "prettier"],
   "rules": {
     //allows import from index inside folder
-    "import/extensions":[
+    "import/extensions": [
       "error",
       "ignorePackages",
       {
@@ -19,6 +15,5 @@
     //allows jsx in tsx
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": "off"
-
   }
 }
