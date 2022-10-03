@@ -28,6 +28,15 @@ const Home: NextPage = () => (
         href="/favicon-16x16.png"
       />
       <link rel="manifest" href="/site.webmanifest" />
+      <meta
+        name="description"
+        content="This is the website for Estevão Gomes, front end developer. Find out about somethings about me, my goals and my projects, and also get in touch!"
+      />
+      <meta
+        name="keywords"
+        content="HTML, CSS, JavaScript, Next, React, Front-end, Developer, Typescript"
+      />
+      <meta name="author" content="Estevão Gomes" />
       <title>Estevão Gomes</title>
     </Head>
     <Main>
