@@ -14,7 +14,13 @@ export function Card({ name, description, image, link, github }: CardProps) {
     <div className="m-8 rounded-md border-[2px] border-t-surface1-light border-l-surface1-light border-r-brand-light border-b-brand-light pt-4 text-center transition-all duration-1000 hover:border-t-brand-light hover:border-l-brand-light hover:border-b-border-light hover:border-r-border-light hover:shadow-brand-light lg:w-3/4">
       <div className={styles.cardContainer}>
         <div className="h-full w-full p-4">
-          <Image src={image} width="1000" height="400" layout="responsive" />
+          <Image
+            src={image}
+            width="1000"
+            height="400"
+            layout="responsive"
+            alt={`${name} page image`}
+          />
         </div>
         <div>
           <h2 className="ml-2 mr-auto w-fit bg-surface1-light p-2 text-text1-light">

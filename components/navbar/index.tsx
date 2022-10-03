@@ -33,7 +33,7 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-20 -mt-14 flex w-full bg-brand-light font-bold opacity-90">
       <div className={styles.logoImage}>
-        <Image src={logo} width="80" height="80" />
+        <Image src={logo} width="80" height="80" alt="Page logo" />
       </div>
       <ul className="mr-0 ml-auto flex list-none items-center justify-center gap-2 py-4 pr-4 font-sans text-text1-light md:justify-end">
         {navItems.map((item, index) => (

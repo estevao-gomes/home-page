@@ -10,7 +10,13 @@ export function Logo({ path, name }: LogoProps) {
   return (
     <div className="flex h-1/5 flex-col items-center justify-center text-center">
       <div className="w-full">
-        <Image src={path} width="100" height="100" layout="fixed" />
+        <Image
+          src={path}
+          width="100"
+          height="100"
+          layout="fixed"
+          alt={`${name} logo`}
+        />
       </div>
       <h3 className="mt-2 font-mono font-bold text-text2-light">{name}</h3>
     </div>
