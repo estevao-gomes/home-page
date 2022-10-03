@@ -5,7 +5,7 @@ export function Contact() {
         <h1 className="mt-6 bg-surface2-light p-4 font-bold text-text1-light shadow-lg lg:text-5xl">
           Get in Touch!
         </h1>
-        <h2 className="my-8 text-base text-text2-light md:text-2xl ">
+        <h2 className="my-8 text-sm text-text2-light md:text-2xl ">
           <p>
             If you saw anything interesting, have some projects you want to know
             more about, or see an opportunity for colaboration, you can reach

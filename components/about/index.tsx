@@ -45,7 +45,7 @@ export function About() {
               <span className="text-brand-light">Estevão Gomes.</span>
             </p>
           </h1>
-          <h2 className="text-base lg:text-2xl">
+          <h2 className="text-sm md:text-2xl">
             <p className="mt-4 text-text2-light">
               I’m interested in learning more about the web development and
               coding world. I also know a thing or two about microcontrollers,
