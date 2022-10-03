@@ -16,7 +16,7 @@ function ListItem({ content }: ListItemProps) {
 
 export function Navbar() {
   const navItems: string[] = [
-    "home",
+    "Home",
     "About Me",
     "Tech Stack",
     "Projects",
