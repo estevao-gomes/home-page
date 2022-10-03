@@ -35,7 +35,7 @@ export function Navbar() {
       <div className={styles.logoImage}>
         <Image src={logo} width="80" height="80" />
       </div>
-      <ul className="mr-0 ml-auto flex list-none items-center justify-center gap-4 py-4 pr-4 font-sans text-text1-light md:justify-end">
+      <ul className="mr-0 ml-auto flex list-none items-center justify-center gap-2 py-4 pr-4 font-sans text-text1-light md:justify-end">
         {navItems.map((item, index) => (
           <ListItem
             content={item}
