@@ -4,10 +4,9 @@ import heroImage from "../../public/Hero.jpg";
 
 export function Hero() {
   return (
-    // The border are to be removed on production
     <section id="home" className="flex h-screen bg-surface2-light">
       {/* Margin top to keep navbar appearing. After pseudo creates angled effect on image */}
-      <div className="relative flex h-1/2 flex-1 items-center justify-center self-center border-0 border-green-900 bg-brand-light after:absolute after:left-24 after:z-0 after:block after:h-full after:w-full after:-skew-x-12 after:bg-brand-light dark:bg-brand-dark after:dark:bg-brand-dark">
+      <div className="relative flex h-1/2 flex-1 items-center justify-center self-center bg-brand-light after:absolute after:left-24 after:z-0 after:block after:h-full after:w-full after:-skew-x-12 after:bg-brand-light dark:bg-brand-dark after:dark:bg-brand-dark">
         <div className="relative z-10 ml-4 text-center md:ml-0">
           <h1 className="mt-6 h-fit bg-surface3-light p-4 font-sans font-bold text-text1-light shadow-lg dark:bg-surface3-dark dark:text-text1-dark md:text-6xl">
             Estevão Gomes
@@ -19,11 +18,12 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="flex h-full flex-1 border-0 border-green-900">
+      <div className="flex h-full flex-1">
         <Image
           src={heroImage}
           className="h-1/2 w-full self-center"
           alt="Estevao Gomes Image"
+          priority
         />
       </div>
     </section>
