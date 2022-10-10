@@ -39,9 +39,9 @@ export function Stack() {
     <section
       ref={sectionRef}
       id="stack"
-      className="flex flex-col items-center justify-center border-0 border-green-500 bg-surface2-light sm:h-screen"
+      className="flex flex-col items-center justify-center bg-surface2-light dark:bg-surface2-dark sm:h-screen"
     >
-      <h1 className="mx-4 my-16 flex h-fit w-fit items-center justify-center bg-surface3-light p-8 text-center font-sans font-bold text-text1-light shadow-lg sm:mt-32 lg:text-5xl">
+      <h1 className="mx-4 my-16 flex h-fit w-fit items-center justify-center bg-surface3-light p-8 text-center font-sans font-bold text-text1-light shadow-lg dark:bg-surface3-dark dark:text-text1-dark sm:mt-32 lg:text-5xl">
         Here is some of the tech I work with...
       </h1>
       <Transition

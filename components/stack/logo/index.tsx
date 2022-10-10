@@ -18,7 +18,9 @@ export function Logo({ path, name }: LogoProps) {
           alt={`${name} logo`}
         />
       </div>
-      <h3 className="mt-2 font-mono font-bold text-text2-light">{name}</h3>
+      <h3 className="mt-2 font-mono font-bold text-text2-light dark:text-text2-dark">
+        {name}
+      </h3>
     </div>
   );
 }

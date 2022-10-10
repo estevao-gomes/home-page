@@ -11,7 +11,7 @@ interface CardProps {
 
 export function Card({ name, description, image, link, github }: CardProps) {
   return (
-    <div className="m-8 rounded-md border-[2px] border-t-surface1-light border-l-surface1-light border-r-brand-light border-b-brand-light pt-4 text-center transition-all duration-1000 hover:border-t-brand-light hover:border-l-brand-light hover:border-b-border-light hover:border-r-border-light hover:shadow-brand-light lg:w-3/4">
+    <div className="m-8 rounded-md border-[2px] border-t-surface1-light border-l-surface1-light border-r-brand-light border-b-brand-light pt-4 text-center transition-all duration-1000 hover:border-t-brand-light hover:border-l-brand-light hover:border-b-border-light hover:border-r-border-light hover:shadow-brand-light dark:border-b-brand-dark dark:border-r-brand-dark dark:border-l-surface1-dark dark:border-t-surface1-dark lg:w-3/4">
       <div className={styles.cardContainer}>
         <div className="h-full w-full p-4">
           <Image
@@ -23,20 +23,20 @@ export function Card({ name, description, image, link, github }: CardProps) {
           />
         </div>
         <div>
-          <h2 className="ml-2 mr-auto w-fit bg-surface1-light p-2 text-text1-light">
+          <h2 className="ml-2 mr-auto w-fit bg-surface1-light p-2 text-text1-light dark:bg-surface1-dark dark:text-text1-dark">
             {name}
           </h2>
-          <h3 className="p-2 text-justify font-sans text-xs text-text2-light lg:text-sm">
+          <h3 className="p-2 text-justify font-sans text-xs text-text2-light dark:text-text2-dark lg:text-sm">
             {description}
           </h3>
           <a
-            className="m-4 inline-block rounded-lg border-2 border-surface1-light p-2 text-text1-light transition-all duration-500 hover:border-surface2-light hover:bg-brand-light"
+            className="m-4 inline-block rounded-lg border-2 border-surface1-light p-2 text-text1-light transition-all duration-500 hover:border-surface2-light hover:bg-brand-light dark:border-surface1-dark dark:text-text1-dark dark:hover:border-surface2-dark dark:hover:bg-brand-dark"
             href={link}
           >
             Link
           </a>
           <a
-            className="m-4 inline-block rounded-lg border-2 border-surface1-light p-2 text-text1-light transition-all duration-500 hover:border-surface2-light hover:bg-brand-light"
+            className="m-4 inline-block rounded-lg border-2 border-surface1-light p-2 text-text1-light transition-all duration-500 hover:border-surface2-light hover:bg-brand-light dark:border-surface1-dark dark:text-text1-dark dark:hover:border-surface2-dark dark:hover:bg-brand-dark"
             href={github}
           >
             Github
