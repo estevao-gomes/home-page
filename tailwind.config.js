@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -10,23 +11,32 @@ module.exports = {
         brand: {
           light:
             "hsl(var(--brand-hue) var(--brand-saturation) var(--brand-lightness) / <alpha-value>)",
+          dark: "hsl(var(--brand-hue) calc(var(--brand-saturation)/2) calc(var(--brand-lightness)/1.5) / <alpha-value>)",
         },
         text1: {
           light:
             "hsl(var(--brand-hue) var(--brand-saturation) 10% / <alpha-value>)",
+          dark: "hsl(var(--brand-hue) 15% 85% / <alpha-value>)",
         },
-        text2: { light: "hsl(var(--brand-hue) 30% 30% / <alpha-value>)" },
+        text2: {
+          light: "hsl(var(--brand-hue) 30% 30% / <alpha-value>)",
+          dark: "hsl(var(--brand-hue) 5% 50% / <alpha-value>)",
+        },
         surface1: {
           light: "hsl(var(--brand-hue) 25% 90% / <alpha-value>)",
+          dark: "hsl(var(--brand-hue) 10% 10% / <alpha-value>)",
         },
         surface2: {
           light: "hsl(var(--brand-hue) 20% 99% / <alpha-value>)",
+          dark: "hsl(var(--brand-hue) 10% 15% / <alpha-value>)",
         },
         surface3: {
           light: "hsl(var(--brand-hue) 20% 92% / <alpha-value>)",
+          dark: "hsl(var(--brand-hue) 5% 20% / <alpha-value>)",
         },
         surface4: {
           light: "hsl(var(--brand-hue) 20% 85% / <alpha-value>)",
+          dark: "hsl(var(--brand-hue) 5% 25% / <alpha-value>)",
         },
         border: {
           light:
