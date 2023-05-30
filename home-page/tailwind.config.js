@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        darkGreen: "04471C",
-        green: "16DB65",
-        bgGreen: "EDFDF4",
-        richBlack: "010B13",
+        darkGreen: "#04471C",
+        lightGreen: "#16DB65",
+        bgGreen: "#EDFDF4",
+        richBlack: "#010B13",
       },
     },
   },

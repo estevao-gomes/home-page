@@ -9,6 +9,7 @@ const PTSans = PT_Sans({
 });
 const OpenSans = Open_Sans({
   weight: ["300", "400", "500", "600", "700", "800"],
+  subsets: ["latin"],
   variable: "--font-opensans",
 });
 const OpenSansCondensed = localFont({
@@ -24,7 +25,7 @@ const OpenSansCondensed = localFont({
       style: "italic",
     },
     {
-      path: "./OpenSans-CondBold",
+      path: "./OpenSans-CondBold.ttf",
       weight: "700",
       style: "normal",
     },
