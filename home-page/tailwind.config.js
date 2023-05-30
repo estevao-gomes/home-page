@@ -13,6 +13,11 @@ module.exports = {
         bgGreen: "#EDFDF4",
         richBlack: "#010B13",
       },
+      fontFamily : {
+        openSans: ['var(--font-opensans)'],
+        openSansCondensed: ['var(--font-opensanscond)'],
+        PTSans: ['var(--font-ptsans)']
+      }
     },
   },
   plugins: [],
