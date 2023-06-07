@@ -8,7 +8,7 @@ export function Tech(){
     const techItems = [ "Lorem ", "Lorem ", "Lorem ", "Lorem ", "Lorem ", "Lorem ", "Lorem ", "Lorem ", "Lorem ", "Lorem "]
     
     return(
-        <section className="mt-4 min-h-[50vh] w-full bg-bgGreen pl-12 sm:pl-36 flex flex-col justify-center">
+        <section className="mt-4 min-h-[50vh] w-full pt-16 bg-bgGreen pl-12 sm:pl-36 flex flex-col justify-center">
             <h2 className="font-bold font-openSans text-3xl sm:text-5xl max-w-[75%]">Lorem</h2>
             <h4 className="font-PTSans leading-relaxed max-w-[75%] sm:text-base mt-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, reiciendis ab.</h4>
             <ul className="flex mt-10 max-w-[900px] flex-wrap gap-6">
