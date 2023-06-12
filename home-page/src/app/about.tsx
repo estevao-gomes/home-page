@@ -1,8 +1,19 @@
-export function About(){
-    return(
-        <section className="min-h-[50vh] w-full flex flex-col justify-center pt-16 pl-12 sm:pl-36">
-            <h2 className="font-bold font-openSans text-3xl sm:text-5xl max-w-[900px]">Lorem ipsum dolor sit amet consectetur.</h2>
-            <h4 className="font-PTSans leading-relaxed max-w-[900px] sm:text-base mt-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, voluptas accusantium quaerat quasi consectetur totam corrupti? Cumque adipisci, perspiciatis at libero quasi fugiat. Porro, aperiam soluta sunt ratione voluptas sit quod nostrum nesciunt temporibus nobis repellat eos distinctio odit quisquam voluptatum assumenda numquam unde quis ipsum ullam. Illum, inventore tenetur.</h4>
-        </section>
-    )
+export function About() {
+  return (
+    <section
+      id="sobre"
+      className="flex min-h-[50vh] w-full flex-col justify-center pl-12 pr-4 pt-16 sm:pl-36"
+    >
+      <h2 className="max-w-[900px] font-openSans text-3xl font-bold sm:text-5xl">
+        Desenvolvimento é uma paixão, de muitas!
+      </h2>
+      <h4 className="mr-4 mt-10 max-w-[900px] font-PTSans leading-relaxed sm:text-base">
+        Amo trabalhar no desenvolvimento de ferramentas complexas e
+        interessantes, sempre utilizando as ferramentas mais atuais e aprendendo
+        o máximo possível no caminho. Além disso, divido como minhas atividades
+        preferidas os Games (principalmente de sobrevivência), Origami, música,
+        e a engenharia, principalmente no que diz respeito a energia renovável.
+      </h4>
+    </section>
+  );
 }

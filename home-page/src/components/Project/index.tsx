@@ -1,15 +1,46 @@
-import Image, { StaticImageData } from 'next/image'
-import desktop from '@/assets/desktop.png'
-import mobile from '@/assets/mobile1.png'
+import Image, { StaticImageData } from "next/image";
 
-export function Project({desktopSrc, mobileSrc}:{desktopSrc:StaticImageData, mobileSrc:StaticImageData}){
-
-    return(
-        <div className='relative'>
-            <Image src={desktop} width={500} height={300} alt="Image of a desktop"/>
-            <Image src={mobile} alt="Image of a desktop" className='absolute bottom-0 right-10 max-w-[25%]'/>
-            {/* <Image src={desktopSrc} alt="Image of project site" className='absolute z-20 top-0'/>
-            <Image src={mobileSrc} alt="Image of project site on mobile" className='absolute z-20 bottom-0 right-0' /> */}
-        </div>
-    )
+interface ProjectProps {
+  image: StaticImageData;
+  rightAligned?: boolean;
+  info: {
+    title: string;
+    description: string;
+    techs: string[];
+    link: string;
+  };
+}
+export function Project({ image, rightAligned, info }: ProjectProps) {
+  return (
+    <div
+      className={`mb-2 flex w-full min-w-min flex-row items-center sm:mb-8 ${
+        rightAligned ? "sm:mr-16 sm:justify-end" : "sm:ml-16 sm:justify-start"
+      }`}
+    >
+      <p className={`${rightAligned ? "order-1" : "order-2"} mx-4 max-w-[25%]`}>
+        <a href={info.link} className="hover:opacity-50">
+          <h2 className="mb-4 font-openSansCondensed text-4xl font-bold">
+            {info.title}
+          </h2>
+        </a>
+        <h3 className="mb-4 text-justify font-PTSans">{info.description}</h3>
+        <ul className="font-PTSans">
+          <p className="font-bold">Principais tecnologias:</p>
+          {info.techs.map((tech, index) => {
+            return <li key={tech.concat("_", index.toString())}>{tech}</li>;
+          })}
+        </ul>
+      </p>
+      <div className="w-[200px] md:w-[300px] xl:w-[600px] 2xl:w-[800px]">
+        <a href={info.link} className="relative hover:opacity-50">
+          <Image
+            src={image}
+            alt="Image of a desktop"
+            width={1500}
+            className={`${rightAligned ? "order-2" : "order-1"}`}
+          />
+        </a>
+      </div>
+    </div>
+  );
 }

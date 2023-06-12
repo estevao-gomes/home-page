@@ -1,18 +1,53 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 import { Project } from "@/components/Project";
 
-import websiteDesktop from "@/assets/websiteDesktop.png"
-import websiteMobile from "@/assets/websiteMobile.png"
+import siteIngles from "@/assets/siteIngles.png";
+import siteReM from "@/assets/siteReM.jpg";
 
-export function Projects(){
-    return (
-        <section className="flex flex-col items-center mt-4 pt-16">
-            <h2 className="font-bold font-openSans text-3xl sm:text-5xl max-w-[75%]">Projects</h2>
-            <h4 className="my-4 sm:mx-0 mx-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dignissimos.</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8 mx-8">
-                <Project mobileSrc={websiteMobile} desktopSrc={websiteDesktop}/>
-                <Project mobileSrc={websiteMobile} desktopSrc={websiteDesktop}/>
-            </div>
-            <button className="rounded-2xl bg-lightGreen py-1 px-2 my-4 font-openSans text-white font-bold text-xl hover:bg-darkGreen focus:bg-darkGreen focus:outline-none focus:ring focus:ring-white sm:text-3xl">Github</button>
-        </section>
-    )
+export function Projects() {
+  const projectInfo_2 = {
+    title: "Rick and Morty Database",
+    description:
+      "Este é um catálogo de todos os personagens do show Ricky and Morty, com diversas funcionalidades e responsivo para ser visualizado em qualquer lugar. Este projeto foi criado com Next.js 13 e TypeScript e consome a API do Rick and Morty (https://rickandmortyapi.com/documentation/).",
+    techs: ["NextJS", "Typescript", "React-query"],
+    link: "OK",
+  };
+  const projectInfo_1 = {
+    title: "Fernanda Santos - Professora de Inglês",
+    description:
+      "Esta é uma Landing Page feita em NextJS e Typescript, para aulas online de inglês.",
+    techs: ["TNextJS", "Typescript", "TailwindCSS"],
+    link: "",
+  };
+  return (
+    <section id="projetos" className="mt-4 flex flex-col items-center pt-16">
+      <h2 className="max-w-[75%] font-openSans text-3xl font-bold sm:text-5xl">
+        Projetos
+      </h2>
+      <h4 className="mx-2 my-4 text-center sm:mx-0">
+        Ideias e desafios que pude trazer a vida através da programação. Todos
+        estes, e outros projetos, podem ser encontrados em meu repositório do
+        Github.
+      </h4>
+      <div className="mx-4 my-4 grid min-h-[100vh] w-full grid-rows-2 gap-4 sm:mx-0 sm:gap-16">
+        <div className="flex w-full justify-center">
+          <Project image={siteIngles} info={projectInfo_1} />
+        </div>
+        <div className="flex w-full justify-center">
+          <Project image={siteReM} info={projectInfo_2} rightAligned />
+        </div>
+      </div>
+      <a href="https://github.com/estevao-gomes" target="_blank">
+        <button className="my-4 flex rounded-2xl bg-lightGreen px-2 py-2 font-openSans text-xl font-bold text-white hover:bg-darkGreen focus:bg-darkGreen focus:outline-none focus:ring focus:ring-white sm:text-3xl">
+          <FontAwesomeIcon
+            icon={faGithub}
+            className="mr-2 aspect-square w-6 text-white sm:w-9"
+          />{" "}
+          Github
+        </button>
+      </a>
+    </section>
+  );
 }
