@@ -38,9 +38,9 @@ export function Hero() {
               />
             </Icon>
           </div>
-          <h1 className="mb-16 font-openSansCondensed text-3xl font-bold">
+          <h1 className="mb-16 font-openSansCondensed text-2xl font-bold sm:text-3xl">
             Olá! Eu sou,
-            <p className="font-openSans text-6xl text-lightGreen">
+            <p className="font-openSans text-4xl text-lightGreen sm:text-6xl">
               ESTEVÃO GOMES
             </p>
             Desenvolvedor Front-End

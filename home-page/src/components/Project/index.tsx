@@ -13,11 +13,15 @@ interface ProjectProps {
 export function Project({ image, rightAligned, info }: ProjectProps) {
   return (
     <div
-      className={`mb-2 flex w-full min-w-min flex-row items-center sm:mb-8 ${
+      className={`mb-2 flex w-full min-w-min flex-col items-center sm:mb-8 sm:flex-row ${
         rightAligned ? "sm:mr-16 sm:justify-end" : "sm:ml-16 sm:justify-start"
       }`}
     >
-      <p className={`${rightAligned ? "order-1" : "order-2"} mx-4 max-w-[25%]`}>
+      <p
+        className={`${
+          rightAligned ? "order-1" : "order-2"
+        } mx-4 sm:max-w-[25%]`}
+      >
         <a href={info.link} className="hover:opacity-50">
           <h2 className="mb-4 font-openSansCondensed text-4xl font-bold">
             {info.title}
@@ -31,13 +35,13 @@ export function Project({ image, rightAligned, info }: ProjectProps) {
           })}
         </ul>
       </p>
-      <div className="w-[200px] md:w-[300px] xl:w-[600px] 2xl:w-[800px]">
+      <div className="w-[300px] xl:w-[600px] 2xl:w-[800px]">
         <a href={info.link} className="relative hover:opacity-50">
           <Image
             src={image}
             alt="Image of a desktop"
             width={1500}
-            className={`${rightAligned ? "order-2" : "order-1"}`}
+            className={`${rightAligned ? "order-2" : "order-1"} mb-4 sm:mb-0`}
           />
         </a>
       </div>

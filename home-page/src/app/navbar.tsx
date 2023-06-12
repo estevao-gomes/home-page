@@ -9,7 +9,11 @@ export function Navbar() {
       <div className="flex w-1/3 bg-lightGreen py-2">
         <h1 className="ml-8 self-center text-2xl font-bold text-white">EG</h1>
       </div>
-      <div className="fixed right-0 top-0 flex h-fit w-min flex-col items-end bg-bgGreen py-2 pr-2 sm:static sm:w-2/3 sm:flex-row">
+      <div
+        className={`fixed right-0 top-0 flex h-fit w-min flex-col items-end ${
+          menuClicked ? "bg-white" : "bg-bgGreen"
+        } pb-1 pr-2 sm:static sm:w-2/3 sm:flex-row`}
+      >
         <button
           onClick={() => {
             setMenuClicked((oldMenu) => !oldMenu);
@@ -20,7 +24,9 @@ export function Navbar() {
         </button>
         <ul
           className={
-            menuClicked ? `h-max w-min` : `hidden w-full justify-around sm:flex`
+            menuClicked
+              ? `h-max w-min p-2`
+              : `hidden w-full justify-around sm:flex`
           }
         >
           <li>
