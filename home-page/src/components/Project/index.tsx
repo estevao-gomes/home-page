@@ -36,7 +36,7 @@ export function Project({ image, rightAligned, info }: ProjectProps) {
         </ul>
       </p>
       <div className="w-[300px] xl:w-[600px] 2xl:w-[800px]">
-        <a href={info.link} className="relative hover:opacity-50">
+        <a target="_blank" href={info.link} className="relative hover:opacity-50">
           <Image
             src={image}
             alt="Image of a desktop"
