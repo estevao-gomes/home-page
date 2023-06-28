@@ -13,7 +13,7 @@ export function Hero() {
   return (
     <section id="home" className="relative flex h-screen">
       <div className="absolute top-[15%] aspect-square w-2/3 max-w-[300px] overflow-hidden rounded-full border-8 border-lightGreen shadow-lg sm:left-[16.67%] sm:w-1/3 sm:max-w-none">
-        <Image src={heroImage} alt="Hero Image" fill priority />
+        <Image src={heroImage} alt="Hero Image - Photo of Estevão Gomes" fill priority />
       </div>
       <div className="h-full w-1/3 bg-lightGreen"></div>
       <div className="flex h-full w-2/3 items-end justify-center bg-bgGreen sm:items-center">

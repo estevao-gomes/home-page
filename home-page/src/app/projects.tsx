@@ -12,15 +12,15 @@ export function Projects() {
     title: "Rick and Morty Database",
     description:
       "Este é um catálogo de todos os personagens do show Ricky and Morty, com diversas funcionalidades e responsivo para ser visualizado em qualquer lugar. Este projeto foi criado com Next.js 13 e TypeScript e consome a API do Rick and Morty (https://rickandmortyapi.com/documentation/).",
-    techs: ["NextJS", "Typescript", "React-query"],
+    techs: ["NextJS", "Typescript", "TailwindCss", "React-query"],
     link: "https://desafio-tecnico-front.vercel.app/",
   };
   const projectInfo_1 = {
     title: "Fernanda Santos - Professora de Inglês",
     description:
       "Esta é uma Landing Page feita em NextJS e Typescript, para aulas online de inglês.",
-    techs: ["TNextJS", "Typescript", "TailwindCSS"],
-    link: "fgsidiomas.com",
+    techs: ["NextJS", "Typescript", "TailwindCSS", "EmailJS"],
+    link: "https://fgsidiomas.com",
   };
   const projectInfo_3 = {
     title: "Household",

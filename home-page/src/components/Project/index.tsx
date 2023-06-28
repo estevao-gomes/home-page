@@ -39,7 +39,7 @@ export function Project({ image, rightAligned, info }: ProjectProps) {
         <a target="_blank" href={info.link} className="relative hover:opacity-50">
           <Image
             src={image}
-            alt="Image of a desktop"
+            alt={`image of ${info.title} on multiple screens of different sizes`}
             width={1500}
             className={`${rightAligned ? "order-2" : "order-1"} mb-4 sm:mb-0`}
           />
