@@ -22,7 +22,7 @@ export function Project({ image, rightAligned, info }: ProjectProps) {
           rightAligned ? "order-1" : "order-2"
         } mx-4 sm:max-w-[25%]`}
       >
-        <a href={info.link} className="hover:opacity-50">
+        <a  target="_blank" href={info.link} className="hover:opacity-50">
           <h2 className="mb-4 font-openSansCondensed text-4xl font-bold">
             {info.title}
           </h2>
