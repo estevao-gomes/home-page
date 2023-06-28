@@ -44,10 +44,10 @@ export function Projects() {
           <Project image={siteHousehold} info={projectInfo_3} />
         </div>
         <div className="flex w-full justify-center">
-          <Project image={siteIngles} info={projectInfo_1} />
+          <Project image={siteIngles} info={projectInfo_1} rightAligned/>
         </div>
         <div className="flex w-full justify-center">
-          <Project image={siteReM} info={projectInfo_2} rightAligned />
+          <Project image={siteReM} info={projectInfo_2}/>
         </div>
       </div>
       <a href="https://github.com/estevao-gomes" target="_blank">
