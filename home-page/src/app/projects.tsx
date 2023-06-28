@@ -5,6 +5,7 @@ import { Project } from "@/components/Project";
 
 import siteIngles from "@/assets/siteIngles.png";
 import siteReM from "@/assets/siteReM.jpg";
+import siteHousehold from "@/assets/siteHousehold.jpg";
 
 export function Projects() {
   const projectInfo_2 = {
@@ -12,14 +13,21 @@ export function Projects() {
     description:
       "Este é um catálogo de todos os personagens do show Ricky and Morty, com diversas funcionalidades e responsivo para ser visualizado em qualquer lugar. Este projeto foi criado com Next.js 13 e TypeScript e consome a API do Rick and Morty (https://rickandmortyapi.com/documentation/).",
     techs: ["NextJS", "Typescript", "React-query"],
-    link: "OK",
+    link: "https://desafio-tecnico-front.vercel.app/",
   };
   const projectInfo_1 = {
     title: "Fernanda Santos - Professora de Inglês",
     description:
       "Esta é uma Landing Page feita em NextJS e Typescript, para aulas online de inglês.",
     techs: ["TNextJS", "Typescript", "TailwindCSS"],
-    link: "",
+    link: "fgsidiomas.com",
+  };
+  const projectInfo_3 = {
+    title: "Household",
+    description:
+      "Household é um projeto criado para ajudar as pessoas a cuidarem de suas atividades domésticas. Gerenciamento de tarefas, anotações e lista de compras. Tudo isso pode ser feito neste aplicativo. Faça login com sua conta do Google para salvar seus dados, ou faça login de forma anônima e salve tudo em seu navegador.",
+    techs: ["Vite", "Typescript", "TailwindCSS", "Firebase", "Headless/UI"],
+    link: "http://house-hold.vercel.app/",
   };
   return (
     <section id="projetos" className="mt-4 flex flex-col items-center pt-16">
@@ -32,6 +40,9 @@ export function Projects() {
         Github.
       </h4>
       <div className="mx-4 my-4 grid min-h-[100vh] w-full grid-rows-2 gap-4 sm:mx-0 sm:gap-16">
+        <div className="flex w-full justify-center">
+          <Project image={siteHousehold} info={projectInfo_3} />
+        </div>
         <div className="flex w-full justify-center">
           <Project image={siteIngles} info={projectInfo_1} />
         </div>
