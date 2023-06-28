@@ -39,7 +39,7 @@ export function Projects() {
         estes, e outros projetos, podem ser encontrados em meu repositório do
         Github.
       </h4>
-      <div className="mx-4 my-4 grid min-h-[100vh] w-full grid-rows-2 gap-4 sm:mx-0 sm:gap-16">
+      <div className="mx-4 my-4 grid min-h-[100vh] w-full grid-rows-3 gap-4 sm:mx-0 sm:gap-16">
         <div className="flex w-full justify-center">
           <Project image={siteHousehold} info={projectInfo_3} />
         </div>
